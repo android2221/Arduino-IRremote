@@ -148,6 +148,8 @@ bool IRrecv::decodeMagiQuest() {
     DBG_PRINT(" magnitude=");
     DBG_PRINTLN(results.magnitude);
 
+    irparams.rawlen = 0;
+
     return true;
 }
 bool IRrecv::decodeMagiQuest(decode_results *aResults) {
